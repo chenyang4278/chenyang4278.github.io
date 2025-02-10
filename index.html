@@ -14,30 +14,30 @@
             scroll-behavior: smooth;
         }
         body {
-            background: #fff;
-            color: #333;
-            line-height: 1.8;
+            background: #111;
+            color: #fff;
+            line-height: 1.6;
         }
         nav {
             position: fixed;
             width: 100%;
             top: 0;
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(17, 17, 17, 0.9);
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             padding: 20px 50px;
             z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
         }
         nav a {
             text-decoration: none;
-            color: #333;
+            color: #fff;
             font-weight: 600;
             margin: 0 20px;
             transition: color 0.3s;
         }
         nav a:hover {
-            color: #007bff;
+            color: #00ccff;
         }
         .section {
             min-height: 100vh;
@@ -45,55 +45,55 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            text-align: center;
-            padding: 80px 15%;
+            text-align: left;
+            padding: 80px 10%;
         }
         .hero {
-            background: #f8f8f8;
             text-align: left;
+            width: 100%;
+            max-width: 900px;
         }
         .hero h1 {
-            font-size: 72px;
+            font-size: 64px;
             font-weight: 600;
             margin-bottom: 20px;
         }
         .hero p {
-            font-size: 24px;
-            color: #555;
+            font-size: 20px;
+            color: #ccc;
             max-width: 600px;
         }
         .about, .experience, .projects, .contact {
-            padding: 100px 15%;
-            text-align: left;
+            padding: 100px 10%;
+            width: 100%;
+            max-width: 900px;
         }
         .experience .timeline {
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
-            gap: 30px;
+            gap: 40px;
         }
         .experience .job {
-            background: #f9f9f9;
-            padding: 30px;
+            background: #222;
+            padding: 20px;
             border-radius: 10px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-            width: 100%;
+            box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
         }
         .projects .project-card {
-            max-width: 800px;
-            margin: 30px auto;
-            padding: 40px;
-            background: #f9f9f9;
+            background: #222;
+            padding: 20px;
             border-radius: 10px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
         }
         .contact {
-            background: #222;
+            background: #000;
             color: white;
             text-align: center;
+            padding: 60px 0;
         }
         .contact a {
-            color: #00aaff;
+            color: #00ccff;
             text-decoration: none;
             font-weight: bold;
         }
@@ -109,23 +109,23 @@
     <section id="about" class="section hero">
         <div>
             <h1>Lorem Ipsum</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.</p>
         </div>
     </section>
     <section id="about" class="section about">
         <h2>About Me</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
     </section>
     <section id="experience" class="section experience">
         <h2>Experience</h2>
         <div class="timeline">
             <div class="job">
                 <h3>Job Title - Company Name</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.</p>
             </div>
             <div class="job">
                 <h3>Job Title - Company Name</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.</p>
             </div>
         </div>
     </section>
@@ -133,7 +133,12 @@
         <h2>Projects</h2>
         <div class="project-card">
             <h3>Project Title</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.</p>
+            <a href="#">View Project</a>
+        </div>
+        <div class="project-card">
+            <h3>Project Title</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.</p>
             <a href="#">View Project</a>
         </div>
     </section>
