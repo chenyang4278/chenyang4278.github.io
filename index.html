@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>Chen Yang - Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         * {
@@ -16,15 +16,16 @@
         body {
             background: #fff;
             color: #333;
+            line-height: 1.6;
         }
         nav {
             position: fixed;
             width: 100%;
             top: 0;
-            background: rgba(255, 255, 255, 0.9);
+            background: rgba(255, 255, 255, 0.95);
             display: flex;
-            justify-content: space-between;
-            padding: 20px 50px;
+            justify-content: center;
+            padding: 15px 50px;
             z-index: 1000;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
@@ -32,7 +33,11 @@
             text-decoration: none;
             color: #333;
             font-weight: 600;
-            margin: 0 15px;
+            margin: 0 20px;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #007bff;
         }
         .section {
             min-height: 100vh;
@@ -40,37 +45,39 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            padding: 50px;
+            padding: 80px 20px;
         }
         .hero {
             background: #f8f8f8;
+            flex-direction: column;
         }
         .hero h1 {
-            font-size: 50px;
+            font-size: 55px;
             font-weight: 600;
         }
         .hero p {
-            font-size: 20px;
-            color: #666;
+            font-size: 22px;
+            color: #555;
             margin-top: 10px;
         }
         .about, .experience, .projects, .contact {
-            background: #fff;
-            padding: 80px 20px;
+            padding: 100px 20px;
             text-align: center;
         }
         .experience .timeline {
             display: flex;
             flex-direction: column;
             align-items: center;
+            gap: 20px;
         }
         .experience .job {
             background: #f9f9f9;
-            padding: 20px;
-            margin: 20px;
+            padding: 25px;
+            margin: 15px;
             border-radius: 10px;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
             width: 60%;
+            text-align: left;
         }
         .projects .project-card {
             max-width: 600px;
@@ -100,44 +107,48 @@
     </nav>
     <section id="about" class="section hero">
         <div>
-            <h1>Hi, I'm [Your Name]</h1>
-            <p>Welcome to my professional portfolio</p>
+            <h1>Chen Yang</h1>
+            <p>Applied Statistics and Computer Science Student at Purdue University</p>
         </div>
     </section>
     <section id="about" class="section about">
         <h2>About Me</h2>
-        <p>I'm a [Your Role] passionate about [Your Interests].</p>
+        <p>I am an undergraduate student of Purdue University pursuing a double major in Applied Statistics and Computer Science. I’m interested in computational statistics, machine learning, and their applications in healthcare, biotechnology, and technology. I plan to pursue graduate studies and aim to contribute to research and real-world problem-solving.</p>
     </section>
     <section id="experience" class="section experience">
         <h2>Experience</h2>
         <div class="timeline">
             <div class="job">
-                <h3>Job Title - Company</h3>
-                <p>Description of your role and achievements.</p>
+                <h3>Control Engineer - Purdue Robomasters</h3>
+                <p>Designed and implemented controllers for omni-directional robots, tuned PID and LQR controllers, and integrated computer vision for aim assistance.</p>
             </div>
             <div class="job">
-                <h3>Job Title - Company</h3>
-                <p>Description of your role and achievements.</p>
+                <h3>Networking & Career Outreach - Purdue Science Student Council</h3>
+                <p>Organized pre-professional panels, connected with major companies, and facilitated Purdue’s Annual Career Fair.</p>
+            </div>
+            <div class="job">
+                <h3>Math & Chinese Tutor - Huaxia Chinese School</h3>
+                <p>Provided one-on-one tutoring in Algebra II and Pre-Calculus, helping students boost academic performance and test scores.</p>
             </div>
         </div>
     </section>
     <section id="projects" class="section projects">
         <h2>Projects</h2>
         <div class="project-card">
-            <h3>Project 1</h3>
-            <p>A brief description of Project 1.</p>
+            <h3>Project Title</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum.</p>
             <a href="#">View Project</a>
         </div>
         <div class="project-card">
-            <h3>Project 2</h3>
-            <p>A brief description of Project 2.</p>
+            <h3>Project Title</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum.</p>
             <a href="#">View Project</a>
         </div>
     </section>
     <section id="contact" class="section contact">
         <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-        <p>GitHub: <a href="https://github.com/your-username">your-username</a></p>
+        <p>Email: <a href="mailto:yang2580@purdue.edu">chenyang4278@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/chenyang4278">chenyang4278</a></p>
     </section>
 </body>
 </html>
